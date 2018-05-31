@@ -16,18 +16,8 @@ private:
 	T *elem;
 public:
 	//MEMBER TYPES
-	typedef T           value_type;
-	typedef unsigned int size_type;
-	typedef ptrdiff_t   difference_type;
-	typedef T &         reference;
-	typedef const T &   const_reference;
-	typedef T *         pointer;
-	typedef const T *   const_pointer;
-	typedef T *         iterator;
+	typedef T * iterator;
 	typedef const T * const_iterator;
-	typedef std::reverse_iterator<iterator> reverse_iterator;
-	typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
-	typedef iterator    InputIt;
 
 	//KONSTRUKTORIAI
 	Vector() : sz(0), cp(0), elem(new T[sz]) {} //DEFAULT konstr
